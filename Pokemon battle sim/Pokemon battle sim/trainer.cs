@@ -8,8 +8,8 @@ namespace Pokemons
 {
     class trainer
     {
-        
-        List <pokeballs> riem = new List<pokeballs>();
+
+        List<pokeballs> riem = new List<pokeballs>();
 
         private string name;
         public trainer(string name)
@@ -23,10 +23,33 @@ namespace Pokemons
             riem.Add(new pokeballs(new Pokemon("charmander6", "water", "fire")));
 
         }
+        public void Throw(int index)
+            {
+       
+            Console.WriteLine("\n"+name+ " gooit ze pokeball nummer: "+ index +" ");
+            Thread.Sleep(1000);
+            Console.WriteLine("" + name + " Gooit zijn pokemon genaamd:" + riem[index].GetPokemon().getName() + "");
+            Thread.Sleep(1000);
+            riem[index].GetPokemon().battlecry(riem[index].GetPokemon().getName());
+
+            }
+        public void Return(int index)
+        {
+
+            Console.WriteLine("\n" + name + " gooit ze pokeball nummer: " + index + " terug naar ze pokemon");
+            Thread.Sleep(1000);
+            Console.WriteLine("" + name + " Zijn pokemon genaamd:" + riem[index].GetPokemon().getName() + " Gaat terug in de bal");
+
+        }
+
+
+
+
 
         public string getName()
         {
             return name;
         }
+
     } 
 }

@@ -21,11 +21,14 @@ namespace Pokemons
         public void battlecry(string name)
         {
             
-          Console.WriteLine("" + name + " ");
+          Console.WriteLine(""+name+ " screams: "+name+"'\n");
             
            
         }
-
+        public string getName()
+        {
+            return name;
+        }
 
     }
 }

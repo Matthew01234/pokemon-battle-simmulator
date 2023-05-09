@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Pokemons
 {
-     class pokeballs
+    class pokeballs
     {
+        private Pokemon pokemon;
+        public pokeballs(Pokemon pokemon) 
+        {
+            this.pokemon = pokemon;
+        }
+        public Pokemon GetPokemon()
+        {
+            return pokemon;
+        }
     }
 }
