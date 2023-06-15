@@ -1,0 +1,25 @@
+-----------------------------
+Pokemon battle Simulator 
+
+-----------------------------
+Update Assignment 1 completed:
+
+Begin gemaakt aan de pokemon battle simulator
+
+
+-----------------------------
+Update Assignment 2 completed:
+
+
+Ik heb gemaakt dat de speler namen kan geven aan beide trainers.
+De pokeballs blijven gegooid worden en weer terug in de bal tot alle pokeballs gebruikt zijn van beiden spelers ( loop )
+
+
+
+-----------------------------
+Update Assignment 3 completed:
+Op het moment van deze update heb ik gemaakt dat elke pokemon ze eigen subclass heeft.
+Op dit moment hebben we dus de charmander, squirtle en bulbasaur class, Deze zijn opgebouwd uit de name weakness en strenght.
+Zodra je een bulbasaur een naam geeft wordt de battelcry override in de class zelf. Dit werkt natuurlijk ook zo voor de squirtle en charmander.
+
+--------

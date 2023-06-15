@@ -3,28 +3,25 @@
 
 namespace Pokemons
 { 
-    class Pokemon
+    abstract class Pokemon
     {
 
         private string name;
-        private string weakness;
         private string strength;
+        private string weakness;
+        
 
-        public Pokemon (string name, string weakness, string strength)
+        public Pokemon (string name, string strength,string weakness)
         {
             this.name = name;
-            this.weakness = weakness; 
             this.strength = strength;
+            this.weakness = weakness; 
+            
 
         }
 
-        public void battlecry(string name)
-        {
-            
-          Console.WriteLine(""+name+ " screams: "+name+"'\n");
-            
-           
-        }
+        public abstract void battlecry(string name);
+
         public string getName()
         {
             return name;

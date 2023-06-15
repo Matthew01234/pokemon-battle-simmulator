@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokemon_battle_sim;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,20 +16,20 @@ namespace Pokemons
         public trainer(string name)
         {
             this.name = name;
-            riem.Add(new pokeballs(new Pokemon("charmander1", "water", "fire")));
-            riem.Add(new pokeballs(new Pokemon("charmander2", "water", "fire")));
-            riem.Add(new pokeballs(new Pokemon("charmander3", "water", "fire")));
-            riem.Add(new pokeballs(new Pokemon("charmander4", "water", "fire")));
-            riem.Add(new pokeballs(new Pokemon("charmander5", "water", "fire")));
-            riem.Add(new pokeballs(new Pokemon("charmander6", "water", "fire")));
+            riem.Add(new pokeballs(new bulbasaur("Grog de bulbasaur")));
+            riem.Add(new pokeballs(new bulbasaur("gerrit de bulbasaur")));
+            riem.Add(new pokeballs(new charmander("tommy de charmander")));
+            riem.Add(new pokeballs(new charmander("bob de charmander")));
+            riem.Add(new pokeballs(new squirtle("greg de squirtle")));
+            riem.Add(new pokeballs(new squirtle("dixie de squirtle")));
 
         }
         public void Throw(int index)
             {
        
-            Console.WriteLine("\n"+name+ " gooit ze pokeball nummer: "+ index +" ");
+            textsettings.SlowWrite("\n"+name+ " gooit ze pokeball nummer: "+ index +" ");
             Thread.Sleep(1000);
-            Console.WriteLine("" + name + " Gooit zijn pokemon genaamd:" + riem[index].GetPokemon().getName() + "");
+             textsettings.SlowWrite("" + name + " Gooit zijn pokemon genaamd:" + riem[index].GetPokemon().getName() + "");
             Thread.Sleep(1000);
             riem[index].GetPokemon().battlecry(riem[index].GetPokemon().getName());
 

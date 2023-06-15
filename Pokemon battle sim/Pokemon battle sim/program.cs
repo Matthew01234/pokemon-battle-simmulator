@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pokemons;
+using Pokemon_battle_sim;
 
 namespace Pokemon_battle_sim
 {
@@ -20,17 +21,13 @@ namespace Pokemon_battle_sim
             string trainernametwee = "" + Console.ReadLine();
             trainer trainer2 = new trainer(trainernametwee);
 
-            trainer1.Throw(0);
-            Thread.Sleep(1000);
-            trainer2.Throw(1);
-            Thread.Sleep(1000);
-            trainer1.Return(0);
-            Thread.Sleep(1000);
-            trainer2.Return(1);
-       
-            
-                
-            
+            battle.battlestart(trainer1,trainer2);
+
+
+
+
+
         }
     }
 }
+
