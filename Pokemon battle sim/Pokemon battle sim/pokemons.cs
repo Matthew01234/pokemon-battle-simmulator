@@ -27,5 +27,21 @@ namespace Pokemons
             return name;
         }
 
+        public string getStrength()
+        {
+            return strength;
+        }
+        public string getWeakness()
+        {
+            return weakness;
+        }
+
+
+
+        public bool IsWeaknessTo(Pokemon pokemon)
+        {
+            return pokemon.getStrength() == this.getWeakness();
+             
+        }
     }
 }

@@ -10,7 +10,7 @@ namespace Pokemon_battle_sim
     class charmander : Pokemon
     {
         private string name = "";
-        public charmander(string name) : base(name, "water", "ground")
+        public charmander(string name) : base(name, "fire", "water")
         {
             this.name = name;
         }

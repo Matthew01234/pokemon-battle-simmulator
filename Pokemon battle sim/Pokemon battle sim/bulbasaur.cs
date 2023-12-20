@@ -10,7 +10,7 @@ namespace Pokemon_battle_sim
      class bulbasaur : Pokemon 
     {
         private string name = "";
-        public bulbasaur(string name) : base(name, "leaf", "fire")
+        public bulbasaur(string name) : base(name, "grass", "fire")
         {
             this.name = name;
         }

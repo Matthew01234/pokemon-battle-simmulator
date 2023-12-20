@@ -43,7 +43,10 @@ namespace Pokemons
 
         }
 
-
+        public List<pokeballs> getBelt()
+        {
+            return riem;
+        }
 
 
 

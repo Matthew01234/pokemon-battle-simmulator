@@ -10,7 +10,7 @@ namespace Pokemon_battle_sim
     class squirtle : Pokemon
     {
         private string name = "";
-        public squirtle(string name) : base(name, "water", "ground")
+        public squirtle(string name) : base(name, "water", "grass")
         {
             this.name = name;
         }
